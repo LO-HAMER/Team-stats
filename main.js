@@ -23,8 +23,18 @@ let players = {
   age: newAge
 };
 this.players.push(players);
+ },
+ addGame(newOpponent, newTeamPoints, newOpponentPoints){
+let game = {
+  opponent: newOpponent,
+  teamPoints: newTeamPoints,
+  opponentPoints: newOpponentPoints
+};
+this.games.push(game)
  } 
 };
 
 team.addPlayer('Bugs', 'Bunny', 76);
 console.log(team.players)
+team.addGame('Titans',100 , 98)
+console.log(team._games)
